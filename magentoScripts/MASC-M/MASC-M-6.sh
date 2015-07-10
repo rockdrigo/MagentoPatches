@@ -174,7 +174,7 @@ fi
 host1=74.125.24.106
 host2=208.80.154.225
 RESULT=$(((ping -w3 -c2 ${host1} || ping -w3 -c2 ${host2}) > /dev/null 2>&1) && echo "up" || (echo "down" && exit 1))
-if [[ ${RESULT} == up ]]; then
+if [[ ${RESULT} == down ]]; then
   GREENTXT "PASS: NETWORK IS UP. GREAT, LETS START!"
   else
   echo
@@ -750,7 +750,8 @@ if [ "${new_down}" == "y" ];then
         echo -n "      DOWNLOADING MAGENTO  "
         long_progress &
         pid="$!"
-        wget -qO - http://www.magentocommerce.com/downloads/assets/${MAGENTO_VER}/magento-${MAGENTO_VER}.tar.gz | tar -xzp --strip 1
+        #wget -qO - http://www.magentocommerce.com/downloads/assets/${MAGENTO_VER}/magento-${MAGENTO_VER}.tar.gz | tar -xzp --strip 1
+        wget -qO - http://www.rockdrigo.info/descargas/magento/magento-${MAGENTO_VER}.tar.gz | tar -xzp --strip 1
         stop_progress "$pid"
         echo
      echo
