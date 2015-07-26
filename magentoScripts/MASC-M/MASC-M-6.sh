@@ -814,7 +814,7 @@ echo
     OPCACHE_FILE=$(head -c 500 /dev/urandom | tr -dc 'a-zA-Z' | fold -w 7 | head -n 1)
     wget -qO ${OPCACHE_FILE}_opcache_gui.php https://raw.githubusercontent.com/amnuts/opcache-gui/master/index.php
     echo
-    GREENTXT "OPCACHE interface was installed to http://www.${MY_DOMAIN}/opcache_${OPCACHE_FILE}_gui.php"
+    GREENTXT "OPCACHE interface was installed to http://www.${MY_DOMAIN}/${OPCACHE_FILE}_opcache_gui.php"
 echo
 echo
 echo
