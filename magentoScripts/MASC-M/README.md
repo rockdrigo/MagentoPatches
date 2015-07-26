@@ -6,7 +6,7 @@
 *Memcached .latest*<br/>
 *Redis .latest*<br/>
 *Varnish 3 .latest*<br/>
-*Magento 1.9.1.0 .latest*<br/>
+*Magento 1.9.2.0 .latest*<br/>
 
 **Additional**:<br/>
 *phpMyAdmin 4.latest - advanced database management*<br/>
@@ -38,3 +38,4 @@ this script was tested on 4gb digitalocean droplet many times, works without any
 Rodrigo:<br/>
 Probado en microsoft azure en maquina A2 con SO "basado en centos OpenLogic 6.5"<br/>
 **no me funciono en centos 6.6 ni 7**
+Para Microsoft azure he desactivado el ping, pues las VM no permiten hacer ping para checar la red, pero obviamente si estamos conectados por ssh a un servidor que no esta en nuestra red, pues hay red.
