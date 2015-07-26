@@ -490,7 +490,7 @@ if [ "${repo_remi_install}" == "y" ];then
             echo -n "     PROCESSING  "
             quick_progress &
             pid="$!"
-            rpm -Uvh http://rpms.famillecollet.com/enterprise/6/remi/x86_64/remi-release-6.5-1.el6.remi.noarch.rpm >/dev/null 2>&1
+            rpm -Uvh http://rpms.famillecollet.com/enterprise/6/remi/x86_64/remi-release-6.5-2.el6.remi.noarch.rpm >/dev/null 2>&1
             stop_progress "$pid"
             rpm  --quiet -q remi-release
       if [ "$?" = 0 ]
